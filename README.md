@@ -1,0 +1,2 @@
+# InsurAI
+Java exercises repository
