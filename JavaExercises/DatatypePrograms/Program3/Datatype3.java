@@ -1,23 +1,26 @@
-// User-defined class
-class Person {
-    String name;
-    int age;
+class Car {
+    String brand;
+    int year;
 
     // Constructor
-    Person(String name, int age) {
-        this.name = name;
-        this.age = age;
+    Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
     }
 
-    void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    // Method to display car details
+    void displayInfo() {
+        System.out.println("Car Brand: " + brand);
+        System.out.println("Manufacturing Year: " + year);
     }
 }
 
-public class UserDefinedExample {
+public class Main {
     public static void main(String[] args) {
-        Person p1 = new Person("Bob", 30);  // Creating object of custom class
-        p1.display();
+        // Create an object of Car
+        Car myCar = new Car("Honda", 2022);
+
+        // Display car information
+        myCar.displayInfo();
     }
 }
